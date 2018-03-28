@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+/*	Style sheets tested on and written to support IE 6, IE 7, Safari 3, Opera 9, and Firefox 2.
+	Modern standards-compliant browsers should render pages with little or no funkiness. */
+
+/*	Styles for structural elements
+	None of this should need to be altered */
+	
+body {
+	font-family: Helvetica, Arial, sans-serif; /* Everything is Helvetica. No more mixing sans-serifs! */
+	font-size: 62.5%; /* We will use a 10 pixel baseline font size for ease of calculating */
+	background-color: #ffffff;
+}
+#wrapper {
+	width: 960px;
+	text-align: left;
+	background-image: url(../images/wrapperBG_personalPages.gif);
+	background-repeat: repeat-y;
+	padding: 0 20px 0 20px; 
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+#banner {
+	width: 960px;
+	height: 115px;
+	background-image: url(../images/bannerBG_personalPages.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+}
+#banner h1, #banner ul#skipNav {
+	text-indent: -9999em;
+	height: 10px;
+	margin-bottom: 0;
+}
+#banner h2 {
+	width: 125px;
+	height: 25px;
+	position: absolute;
+	top: 70px;
+	left: 75px;
+	z-index: 600;
+}
+#banner h2 a {
+	text-indent: -9999em;
+	width: 125px;
+	height: 25px;
+	display: block;
+}
+#content {
+	width: 960px;
+	clear: both;
+	position: relative;
+	overflow: auto;
+}
+table {
+	width: 100%;
+}
+tr {
+	vertical-align: top;
+}
+th {
+	background-color: #edf7fa;
+	border-top: solid 1px #e0e0e0;
+	border-bottom: solid 1px #e0e0e0;
+	padding-top: 5px;
+	padding-bottom:4px;
+}
+td {
+	padding-top: 5px;
+	padding-bottom:4px;
+}
+#footer {
+	width: 1000px;
+	height: 142px;
+	background-color: #ffffff;
+	background-image: url(../images/footerBG.jpg);
+	margin: 0 -20px 0 -20px;
+}
+#footer #footerContactLink {
+	font-size: 1.2em;
+	text-align: right;
+	width: 150px;
+	float: right;
+	padding-top: 18px;
+	padding-right: 35px;
+}
+#footer img {
+	margin: 17px 0 0 20px;
+}
+#footer p {
+	font-size: 10px;
+	line-height: 1.2em;
+	padding-left: 35px;
+	margin-bottom: 6px;
+}
+#footer a {
+	text-decoration: underline;
+}
+.contentClearingDiv { /* This also provides the bottom margin for the content div */
+	width: 960px;
+	height: 1px;
+	clear: both;
+}
+
+/*	Type styles */
+
+#content p, #content li, blockquote {
+	font-size: 1.2em; /* 12px */
+	line-height: 1.5em; /* 18px */
+}
+#content a {
+	color: #37529e;
+	border-bottom: solid 1px #e3e4e7;
+}
+#content p a:hover, #content td a:hover {
+	border-bottom: solid 1px #37529e;
+}
+#content table li, #content table p, #content li p {
+	font-size: inherit;
+	line-height: inherit;
+}
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+h2, h3, h4, h5, h6, blockquote {
+	margin-bottom: 12px;
+}
+#content p {
+	margin-bottom: 9px;
+}
+#content h2 {
+	font-size: 1.6em;
+	line-height: 1.125em;
+	font-weight: bold;
+	color: #466f86;
+}
+#content h3 {
+	font-size: 1.4em;
+	line-height: 1.285em;
+	font-weight: normal;
+	text-transform: uppercase; 
+	color: #466f86;
+}
+#content h4 {
+	font-size: 1.3em;
+	line-height: 1.385em;
+	font-weight: bold;
+	text-transform: uppercase; 
+	color: #466f86;
+}
+#content h5 {
+	font-size: 1.3em;
+	line-height: 1.385em;
+	font-weight: normal;
+	text-transform: normal;
+	color: #466f86;
+}
+#content h6 {
+	color: #444444;
+	font-size: 1.2em; /*12px*/
+	line-height: 1.5em; /*18px*/
+}
+blockquote {
+	color: #466f86;
+	font-style: italic;
+	padding: 0 30px;
+}
+table {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+#content table h6 {
+	font-size: 1.083em;
+}
+
+/*	Specific styles for the personal pages */
+
+.navList {
+	color: #555;
+	font-size: 9px;
+	line-height: 18px;
+	height: 18px;
+	margin-bottom: 9px;
+}
+.navList li {
+	height: 18px;
+	float: left;
+	border-left: solid 1px #ccc;
+	padding: 0 18px;
+}
+.navList li.first {
+	border: none;
+	padding-left: 0;
+}
+.navList li a {
+	font-size: 13px;
+}
+#personalInfo {
+	padding: 0;
+}
+#personalInfo img {
+	float: left;
+	border: solid 1px #e4e4e4; 
+	padding: 4px;
+	margin: 25px 25px 10px 55px;
+}
+#vitals {
+	padding: 30px 60px 12px 60px;
+}
+#content #vitals p  {
+	line-height: 21px;
+	margin-bottom: 0;
+}
+h1#name {
+	font-size: 2em;
+	line-height: 1.2em;
+	font-weight: bold;
+	color: #466f86;
+	margin-bottom: 3px;
+}
+#content h2#title {
+	color: #444;
+	text-transform: none;
+	margin-bottom: 9px;
+}
+#contact, #mailing {
+	width: 275px;
+	float: left;
+	border-top: solid 1px #ccc;
+	padding-top: 18px;
+}
+#contactSummary {
+	border-top: solid 1px #ccc;
+	padding-top: 18px;
+}
+.label {
+	color: #555;
+}
+.downloadType {
+	color: #555;
+	font-size: 11px;
+}
+#moreInfo {
+	clear: both;
+	padding-bottom: 36px;
+}
+.subsection {
+	clear: both;
+	padding: 18px 0 0 0;
+}
+#content .subsection p {
+	padding-right: 120px;
+}
+.subsectionNarrow {
+	width: 50%;
+	float: left;
+	padding: 18px 0 0 0;
+}
+#moreInfo p, #moreInfo h3, #moreInfo h4, #moreInfo h5, #moreInfo h6 {
+	padding: 0 60px;
+
+}
+#moreInfo ul {
+	padding: 0 0 0 78px;
+	margin: 0 0 18px 0;
+	list-style: square;
+}
+#moreInfo ol {
+	padding: 0 0 0 78px;
+	margin: 0 0 18px 0;
+	list-style: decimal;
+}
+#moreInfo ol ol,
+#moreInfo ul ul,
+#moreInfo ul ol,
+#moreInfo ol ul {
+	padding: 0 0 0 18px;
+	margin: 0 0 0 0;
+}
+#moreInfo ol ol {
+	list-style: lower-alpha;
+}
+#moreInfo ol ol ol {
+	list-style: lower-roman;
+}
+#moreInfo ol ol li,
+#moreInfo ul ul li,
+#moreInfo ol ul li,
+#moreInfo ul ol li {
+	font-size: inherit;
+}
+#moreInfo h4 {
+	padding-top: 9px;
+	margin-bottom: 9px;
+}
+#moreInfo h2 {
+	background-color: #edf7fa;
+	border-top: solid 1px #e0e0e0;
+	border-bottom: solid 1px #e0e0e0;
+	padding: 6px 60px 3px 60px;
+}
